@@ -14,37 +14,41 @@ import starwarV from '../assets/Videos/star-wars.mp4'
 
 function ProductionHouse() {
 
-    const productionHouse = [
+    const productionHouseList = [
         {
-            name: "Disney",
-            logo: disney,
+            id: 1,
+            image: disney,
             video: disneyV
         },
         {
-            name: "Marvel",
-            logo: marvel,
+            id: 2,
+            image: marvel,
             video: marvelV
         },
         {
-            name: "National Geographic",
-            logo: nationalG,
+            id: 3,
+            image: nationalG,
             video: nationalGV
         },
         {
-            name: "Pixar",
-            logo: pixar,
+            id: 4,
+            image: pixar,
             video: pixarV
         },
         {
-            name: "Star Wars",
-            logo: starwar,
+            id: 5,
+            image: starwar,
             video: starwarV
         }
     ]
 
   return (
-    <div>
-      <h1>Production House</h1>
+    <div className='flex'>
+        {productionHouseList.map((item) => (
+            <div>
+            <img src={item.image} className='w-full '/>
+            </div>
+        ))}
     </div>
   )
 }
