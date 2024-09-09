@@ -36,7 +36,7 @@ function Slider() {
     <div className='flex overflow-x-auto w-full px-16 py-4 scrollbar-none scroll-smooth' ref={elementRef}>
       {movieList.map((item,index) => (
         <img src={`${ImageBaseUrl}${item.poster_path}`}
-         className='md:h-[300px] object-cover object-left-top mr-10 rounded-md hover:border-2 hover:border-gray-500' alt=""  />
+         className='md:h-[300px] object-cover object-left-top mr-10 rounded-md hover:border-4 hover:border-gray-400 transition-all duration-75 ease-in' alt=""  />
       ))}
     </div>
     </div>
