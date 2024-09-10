@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import GlobalApi from '../Services/GlobalApi'
+import MovieCard from './MovieCard'
 
 function MovieList({genreId}) {
 
@@ -17,7 +18,9 @@ function MovieList({genreId}) {
 
   return (
     <div>
-      <h1>MovieList</h1>
+      {movieList.map((item, index) => (
+          <MovieCard />
+      ))}
     </div>
   )
 }
