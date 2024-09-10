@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Components/Header'
 import Slider from './Components/Slider'
 import ProductionHouse from './Components/ProductionHouse'
+import GenresList from './Constant/GenresList'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Slider />
       <ProductionHouse />
+      
     </div>
   )
 }
