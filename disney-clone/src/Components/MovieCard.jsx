@@ -1,9 +1,12 @@
 import React from 'react'
 
-function MovieCard() {
+
+const ImageBaseUrl = "https://image.tmdb.org/t/p/w500"
+
+function MovieCard({movie}) {
   return (
     <div>
-      <h1>Movie Card</h1>
+        <img src={`${ImageBaseUrl}${movie.poster_path}`} alt="" />
     </div>
   )
 }
