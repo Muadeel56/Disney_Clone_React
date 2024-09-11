@@ -5,9 +5,9 @@ const ImageBaseUrl = "https://image.tmdb.org/t/p/w500"
 
 function MovieCard({movie}) {
   return (
-    <div>
-        <img src={`${ImageBaseUrl}${movie.poster_path}`} alt="" />
-    </div>
+    <>
+        <img src={`${ImageBaseUrl}${movie.poster_path}`} alt="" className='w-[110px] md:w-[200px]'/>
+    </>
   )
 }
 
